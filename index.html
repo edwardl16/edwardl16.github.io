@@ -18,26 +18,18 @@
         .grid-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto auto;
+            gap: 1px; /* Thin gap for the grid lines */
             max-width: 600px;
             width: 100%;
             border: 1px solid black;
         }
         .grid-item {
+            padding: 10px;
             border: 1px solid black;
-            border-right: none;
-            border-bottom: none;
-            box-sizing: border-box;
-            padding: 15px;
-            font-size: 16px;
-            color: #333;
             text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            font-size: 16px;
         }
-        .grid-item input,
-        .grid-item textarea {
+        input, textarea {
             width: 100%;
             border: none;
             background-color: transparent;
@@ -45,43 +37,33 @@
             font-size: inherit;
             color: inherit;
             text-align: center;
-            overflow-wrap: break-word;
-            padding: 0;
-        }
-        .grid-item textarea {
-            height: auto;
-            min-height: 60px; /* Ensures the box starts with enough height */
             overflow: hidden;
-            resize: vertical; /* Allows the user to resize the text box vertically */
-            rows: 4; /* Sets the initial number of visible rows */
         }
-        .grid-item:nth-child(2n) {
-            border-right: 1px solid black;
-        }
-        .grid-item:nth-last-child(-n+2) {
-            border-bottom: 1px solid black;
+        textarea {
+            height: auto;
+            min-height: 40px; /* Ensures a base height */
         }
     </style>
 </head>
 <body>
     <div class="grid-container">
         <div class="grid-item">
-            <input type="text" placeholder="Name" value="Name">
+            <input type="text" value="Name">
         </div>
         <div class="grid-item">
-            <input type="text" placeholder="Edward Logan" value="Edward Logan">
+            <input type="text" value="Edward Logan">
         </div>
         <div class="grid-item">
-            <input type="text" placeholder="Introduction">
+            <input type="text" value="Introduction">
         </div>
         <div class="grid-item">
-            <textarea placeholder="Hello, I am a junior IT major at GMU. I seek to concentrate in both WADV and cybersecurity. I also wish to pursue an accelerated master's degree in digital forensics."></textarea>
+            <textarea readonly>Hello, I am a junior IT major at GMU. I seek to concentrate in both WADV and cybersecurity. I also wish to pursue an accelerated master's degree in digital forensics.</textarea>
         </div>
         <div class="grid-item">
-            <input type="text" placeholder="Hobbies">
+            <input type="text" value="Hobbies">
         </div>
         <div class="grid-item">
-            <textarea placeholder="Video editing, 3D, motion design, video games, and more!"></textarea>
+            <textarea readonly>Video editing, 3D, motion design, video games, and more!</textarea>
         </div>
     </div>
 </body>
