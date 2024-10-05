@@ -34,9 +34,10 @@
             box-sizing: border-box;
         }
         textarea {
-            overflow: hidden;
             height: auto;
             min-height: 50px;
+            overflow: hidden;
+            resize: none; /* Prevents resizing */
         }
     </style>
 </head>
@@ -57,9 +58,4 @@
         <div class="grid-item">
             <input type="text" value="Hobbies">
         </div>
-        <div class="grid-item">
-            <textarea readonly>Video editing, 3D, motion design, video games, and more!</textarea>
-        </div>
-    </div>
-</body>
-</html>
+        <div class
