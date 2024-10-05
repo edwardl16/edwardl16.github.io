@@ -32,16 +32,15 @@
             padding: 10px;
             font-size: 16px;
             box-sizing: border-box;
+            overflow: hidden; /* Prevents scrollbars */
         }
         textarea {
-            height: auto;
-            min-height: 50px;
-            overflow: hidden;
-            resize: none; 
+            resize: none; /* Prevent resizing */
         }
     </style>
 </head>
 <body>
+
     <div class="grid-container">
         <div class="grid-item">
             <input type="text" value="Name">
@@ -58,4 +57,17 @@
         <div class="grid-item">
             <input type="text" value="Hobbies">
         </div>
-        <div class
+        <div class="grid-item">
+            <textarea readonly>Video editing, 3D, motion design, video games, and more!</textarea>
+        </div>
+    </div>
+
+    <script>
+        // Automatically resize textareas to fit content
+        document.querySelectorAll('textarea').forEach(textarea => {
+            textarea.style.height = textarea.scrollHeight + 'px';
+        });
+    </script>
+
+</body>
+</html>
