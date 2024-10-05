@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>2x3 Connected Input Grid</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -29,9 +29,9 @@
             border-bottom: none;
             box-sizing: border-box;
             padding: 15px;
-            text-align: center;
             font-size: 16px;
             color: #333;
+            text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -45,12 +45,15 @@
             font-size: inherit;
             color: inherit;
             text-align: center;
-            resize: none;
+            overflow-wrap: break-word;
             padding: 0;
         }
         .grid-item textarea {
-            overflow: hidden;
             height: auto;
+            min-height: 60px; /* Ensures the box starts with enough height */
+            overflow: hidden;
+            resize: vertical; /* Allows the user to resize the text box vertically */
+            rows: 4; /* Sets the initial number of visible rows */
         }
         .grid-item:nth-child(2n) {
             border-right: 1px solid black;
