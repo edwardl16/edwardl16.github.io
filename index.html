@@ -9,11 +9,10 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr;
-            max-width: 300px;
+            max-width: 600px;
         }
         .grid-item {
             width: 100%;
-            height: 50px;
             border: 1px solid black;
             border-right: none;
             border-bottom: none;
@@ -26,19 +25,24 @@
         .grid-item:nth-last-child(-n+2) {
             border-bottom: 1px solid black;
         }
+        textarea {
+            width: 100%;
+            height: 100%;
+            border: none;
+            padding: 10px;
+            resize: none;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
     <div class="grid-container">
-        <input type="text" class="grid-item" placeholder="Name">
-        <input type="text" class="grid-item" placeholder="Edward Logan">
+        <input type="text" class="grid-item" placeholder="Name" value="Name">
+        <input type="text" class="grid-item" placeholder="Edward Logan" value="Edward Logan">
         <input type="text" class="grid-item" placeholder="Introduction">
-        <input type="text" class="grid-item" placeholder="Hello, I am a junior IT major at GMU.
-        I seek to concentrate in both WADV and cybersecurity. I also wish to pursue an acclerated
-        master's degree in digital forensics.">
+        <textarea class="grid-item" placeholder="Hello, I am a junior IT major at GMU. I seek to concentrate in both WADV and cybersecurity. I also wish to pursue an accelerated master's degree in digital forensics."></textarea>
         <input type="text" class="grid-item" placeholder="Hobbies">
-        <input type="text" class="grid-item" placeholder="Video editing, 3D, motion design, video games
-        and more!">
+        <textarea class="grid-item" placeholder="Video editing, 3D, motion design, video games, and more!"></textarea>
     </div>
 </body>
 </html>
