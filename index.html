@@ -3,27 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>IT Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
+            background-color: #0056b3;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #003f8a;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .grid-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1px;
-            max-width: 600px;
-            width: 100%;
+            gap: 15px;
         }
         .grid-item {
-            padding: 10px;
-            border: 1px solid black;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background: #f9f9f9;
+            border-radius: 5px;
             text-align: center;
         }
         input, textarea {
@@ -32,35 +57,59 @@
             padding: 10px;
             font-size: 16px;
             box-sizing: border-box;
-            overflow: hidden; /* Prevents scrollbars */
+            overflow: hidden;
+            background: #f0f0f0;
+            border-radius: 5px;
         }
         textarea {
-            resize: none; /* Prevent resizing */
+            resize: none;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
         }
     </style>
 </head>
 <body>
 
-    <div class="grid-container">
-        <div class="grid-item">
-            <input type="text" value="Name">
-        </div>
-        <div class="grid-item">
-            <input type="text" value="Edward Logan">
-        </div>
-        <div class="grid-item">
-            <input type="text" value="Introduction">
-        </div>
-        <div class="grid-item">
-            <textarea readonly>Hello, I am a junior IT major at GMU. I seek to concentrate in both WADV and cybersecurity. I also wish to pursue an accelerated master's degree in digital forensics.</textarea>
-        </div>
-        <div class="grid-item">
-            <input type="text" value="Hobbies">
-        </div>
-        <div class="grid-item">
-            <textarea readonly>Video editing, 3D, motion design, video games, and more!</textarea>
+    <header>
+        <h1>Welcome to My IT Portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="ethics.html">Ethics</a>
+    </nav>
+
+    <div class="container">
+        <div class="grid-container">
+            <div class="grid-item">
+                <input type="text" value="Name" readonly>
+            </div>
+            <div class="grid-item">
+                <input type="text" value="Edward Logan" readonly>
+            </div>
+            <div class="grid-item">
+                <input type="text" value="Introduction" readonly>
+            </div>
+            <div class="grid-item">
+                <textarea readonly>Hello, I am a junior IT major at GMU. I seek to concentrate in both WADV and cybersecurity. I also wish to pursue an accelerated master's degree in digital forensics.</textarea>
+            </div>
+            <div class="grid-item">
+                <input type="text" value="Hobbies" readonly>
+            </div>
+            <div class="grid-item">
+                <textarea readonly>Video editing, 3D, motion design, video games, and more!</textarea>
+            </div>
         </div>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Edward Logan</p>
+    </footer>
 
     <script>
         // Automatically resize textareas to fit content
