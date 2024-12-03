@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethics in IT</title>
+    <title>IT Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -33,21 +34,36 @@
         }
         .container {
             max-width: 800px;
-            margin: 50px auto;
+            margin: 20px auto;
             padding: 20px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .grid-item {
+            padding: 15px;
+            border: 1px solid #ddd;
+            background: #f9f9f9;
+            border-radius: 5px;
             text-align: center;
         }
-        h1 {
-            color: #007bff;
-            margin-bottom: 20px;
+        input, textarea {
+            width: 100%;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            box-sizing: border-box;
+            overflow: hidden;
+            background: #f0f0f0;
+            border-radius: 5px;
         }
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #333;
+        textarea {
+            resize: none;
         }
         footer {
             text-align: center;
@@ -56,9 +72,17 @@
             background-color: #007bff;
             color: white;
         }
+        h2 {
+            color: #007bff;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 32px;
+        }
+
     </style>
 </head>
 <body>
+
 
     <header>
         <h1>Welcome to My IT Portfolio</h1>
@@ -70,7 +94,7 @@
     </nav>
 
     <div class="container">
-        <h1>Ethics in IT: Cybersecurity</h1>
+        <h2>Ethics in IT: Cybersecurity</h2>
         <p>
           With the growing threat of cyberattacks such as malware, phishing, and DDOSing there is a need to increase
             cybersecurity measures. However, this comes with its own set ethics. For example, how much power should the
@@ -79,7 +103,7 @@
             such as the U.S. whose Constitution is built on God given Rights. This is also true for institutions who hold
             personal data such as banks. They must be able to have a secure means of storing data while also making it
             accessible to themselves and its users. If too many security measures are set in place it compromises accessibility.
-            When looking to the future it is important to keep these ideas in mind with the rising cyber threats. 
+            When looking to the future it is important to keep these ideas in mind with the rising cyber threats.
 
         </p>
     </div>
@@ -87,6 +111,7 @@
     <footer>
         <p>&copy; 2024 Edward Logan</p>
     </footer>
+
 
 </body>
 </html>
